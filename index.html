@@ -1195,7 +1195,7 @@ function selectRag(dimId, rag, btn) {
   btn.classList.add('selected');
 }
 
-async async function submitResponse(dimId) {
+async function submitResponse(dimId) {
   const rag = selectedRags[dimId];
   if (!rag) { alert('Please select a maturity rating.'); return; }
   const working = document.getElementById(`working-${dimId}`).value.trim();
